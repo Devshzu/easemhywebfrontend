@@ -35,7 +35,7 @@ const Stats = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div className="flex flex-col gap-8 md:grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           {stats.map((stat, index) => (
             <div
               key={index}

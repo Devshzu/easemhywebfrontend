@@ -87,7 +87,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         {/* Floating Badge */}
-<div className="inline-flex items-center gap-2 bg-gray-900/50 backdrop-blur-sm border border-purple-500/30 rounded-full px-4 py-2 mb-4 animate-fade-in mt-[38%] md:mt-0">
+<div className="inline-flex items-center gap-2 bg-gray-900/50 backdrop-blur-sm border border-purple-500/30 rounded-full px-4 py-2 mb-2 md:mb-4 animate-fade-in mt-[40%] md:mt-[8%]">
           <Sparkles className="w-4 h-4 text-purple-400 animate-spin" />
           <span className="text-sm text-gray-300">✨ Now with AI-Powered Features</span>
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
@@ -95,7 +95,7 @@ const Hero = () => {
 
         {/* Enhanced Main Title */}
         <h2
-         className="text-5xl md:text-8xl lg:text-7xl font-black mb-2 md:mb-8 leading-tight"
+         className="text-4xl md:text-8xl lg:text-7xl font-black mb-2 md:mb-8 leading-tight"
           style={{ transform: `translateY(${scrollY * 0.2}px)` }}
         >
           <span className="block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-gradient-x">
@@ -108,7 +108,7 @@ const Hero = () => {
         
         {/* Enhanced Image Gallery with Glow Effects */}
         <div 
-        className="flex justify-center gap-4 mb-1 md:mb-12 overflow-x-auto pb-4 scrollbar-hide"
+        className="flex justify-center gap-4 mb-1 md:mb-2 overflow-x-auto pb-4 scrollbar-hide"
           style={{ transform: `translateY(${scrollY * 0.1}px)` }}
         >
           {images.map((image, index) => (
@@ -135,7 +135,7 @@ const Hero = () => {
         </div>
 
         {/* Enhanced Subtitle with More Icons */}
-       <div className="flex items-center justify-center gap-3 mb-2 md:mb-8 flex-wrap">
+       <div className="flex items-center justify-center gap-3 mb-4 md:mb-8 flex-wrap">
           <Star className="w-6 h-6 text-yellow-400 animate-spin" />
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-black bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
             Awesome · Amazing · Incredible
@@ -143,7 +143,7 @@ const Hero = () => {
           <Zap className="w-6 h-6 text-yellow-400 animate-pulse" />
         </div>
         
-     <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-4 md:mb-12 leading-relaxed">
+     <p className="text-lg md:text-2xl text-gray-300 max-w-3xl mx-auto mb-6 md:mb-8 leading-relaxed">
   Transform your ideas into reality with our cutting-edge products designed for the modern world.
   {/* Experience innovation like never before with AI-powered solutions. */}
 </p>
@@ -163,8 +163,8 @@ const Hero = () => {
         </div> */}
         
         {/* Enhanced Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-          <button className="group relative bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 px-10 py-5 rounded-full font-bold text-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-purple-500/50 overflow-hidden">
+        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center mb-16">
+          <button className="group relative bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 px-10 py-2 md:py-5 rounded-full font-bold text-lg hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-purple-500/50 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
             <span className="relative flex items-center">
               Explore Products
@@ -172,7 +172,7 @@ const Hero = () => {
             </span>
           </button>
           
-          <button className="group relative px-10 py-5 rounded-full border-2 border-purple-400/50 text-purple-400 font-bold text-lg hover:bg-purple-400/10 hover:border-purple-400 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
+          <button className="group relative px-10 py-1 md:py-5 rounded-full border-2 border-purple-400/50 text-purple-400 font-bold text-lg hover:bg-purple-400/10 hover:border-purple-400 transition-all duration-300 transform hover:scale-105 backdrop-blur-sm">
             <div className="absolute inset-0 bg-purple-400/5 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300" />
             <span className="relative flex items-center">
               <Play className="w-5 h-5 mr-2" />
@@ -201,12 +201,12 @@ const Hero = () => {
       </div>
 
       {/* Enhanced Scroll Indicator */}
-      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+   <div className="absolute bottom-0 left-[48%] transform -translate-x-1/2 animate-bounce hidden md:block">
         <div className="flex flex-col items-center gap-2">
           <span className="text-xs text-gray-400 uppercase tracking-wider">Scroll Down</span>
           <ChevronDown className="w-6 h-6 text-purple-400" />
         </div>
-      </div> */}
+      </div>
 
       {/* Custom CSS for animations */}
       <style>{`

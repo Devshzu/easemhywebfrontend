@@ -41,7 +41,7 @@ const CTA = () => {
           </div>
           
           <h2 className="text-4xl md:text-6xl font-black mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 bg-clip-text text-transparent">
-            Ready to Transform Your Workflow?
+            Ready to Transform Your Business?
           </h2>
           
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">

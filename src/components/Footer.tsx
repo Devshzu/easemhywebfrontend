@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sparkles, Twitter, Github, Linkedin, Mail } from 'lucide-react';
-
+import logo from '../assets/images/newlogo.png'
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-gray-900 to-black border-t border-gray-800 py-16">
@@ -9,10 +9,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <Sparkles className="w-8 h-8 text-purple-400" />
-              <span className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
-                Innovate
-              </span>
+            <img src={logo} alt="" style={{ width: '30%', objectFit: 'cover'}} />
             </div>
             <p className="text-gray-400 mb-6">
               Creating extraordinary products that shape the future of digital experiences.
@@ -49,7 +46,6 @@ const Footer = () => {
             <h3 className="text-white font-bold mb-4">Company</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">About</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Careers</a></li>
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Blog</a></li>
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Press</a></li>
             </ul>
@@ -60,9 +56,10 @@ const Footer = () => {
             <h3 className="text-white font-bold mb-4">Support</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Help Center</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Contact</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Contact Us</a></li>
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Status</a></li>
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Privacy</a></li>
+              <li><a href="/career" className="text-gray-400 hover:text-purple-400 transition-colors duration-300">Career</a></li>
             </ul>
           </div>
         </div>
